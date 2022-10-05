@@ -20,6 +20,7 @@
     display: flex;
     flex-direction: column;
     width: 100vw;
+    position: relative;
 }
 .header {
     display: flex;
@@ -33,11 +34,11 @@
 .logo img {
  width: 12vw;   
 }
-.nav-links ul {
+.nav-links>ul {
     display: flex;
     list-style-type: none;
 }
-.nav-links ul a {
+.nav-links>ul>a {
     text-decoration: none;
     color: #fff;
     margin: 0.3vw 0.8vw;
@@ -47,9 +48,49 @@
     font-size: 0.85vw;
     font-weight: 600;
 }
-.nav-links ul a:hover {
+.nav-links ul>a:hover {
     color: #ff3b33;
 }
+
+.dropdown-content {
+    width: 50vw;
+    border-radius: 1vw;
+    background-color: #fff;
+    position: absolute;
+    top: 5vw;
+    left: 20vw;
+    /* overflow: hidden; */
+    display: none;
+    /* display: flex; */
+    /* visibility: hidden; */
+    box-shadow: 0 0 30px 0 rgb(255, 255, 255);
+    z-index: 999;
+}
+.dropdown-section {
+    background-color: #fff;
+    width: 50%;
+    padding: 2vw 1vw 4vw 1vw;
+}
+.dropdown-title {
+    color: #ff3b33;
+    font-size: 1.3vw;
+}
+.dropdown-section>ul>li {
+    margin-top: 1vw;
+    font-size: 0.95vw;
+}
+.dropdown-section>ul>li>a{
+    text-decoration: none;
+    color: #162466;
+}
+.right-dropdown {
+    background-color: #f3f5f8;
+}
+
+.dropdown:hover > .dropdown-content {
+   display: block;
+}
+
 .btn {
     background-color: #ff3b33;
     padding: 0.9vw 2.8vw;
@@ -158,6 +199,83 @@
 
 .remarkable-content .img-desc img {
     width: 200%;
+}
+
+.services {
+    background: linear-gradient(to bottom, rgba(243, 245, 247, 1), rgba(243, 245, 247, 0));
+    padding: 2vw 0 2vw 0;
+}
+
+.title_desc {
+    width: 70vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.services h1, p {
+    color: #162466;
+    font-size: 2vw;
+    margin: 1vw 0 1vw 0;
+}
+
+.services p {
+    font-size: 1.1vw;
+}
+
+.services-section {
+    display: flex;
+}
+
+.services-list {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 1vw;
+}
+
+.service-item {
+    display: flex;
+    background-color: #fff;
+    border-radius: 0.3vw;
+    padding: 1vw;
+    width: 70%;
+    align-items: center;
+    margin-bottom: 1vw;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.service-selected {
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.4);
+}
+
+.service-item img {
+    width: 4.5vw;
+    margin-right: 1vw;
+}
+
+.service-item h3 {
+    color: #162466;
+    font-size: 1.2vw;
+}
+
+.services-details {
+    width: 40%;
+    align-self: center;
+    padding-left: 1vw;
+}
+
+.services-details img {
+    width: 4.2vw;
+}
+
+.services-details h1 {
+    color: #ff3b33;
+    font-size: 2vw;
+}
+.services-details p {
+    color: #162466;
+    font-size: 1.1vw;
 }
 
 .footer {
