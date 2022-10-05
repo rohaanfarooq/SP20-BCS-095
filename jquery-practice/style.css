@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    width: 70vw;
+    padding: 1vw;
+    border-radius: 0.4vw;
+    outline: none;
+    border: none;
+    background-color: #f7f7f7;
+}
+
+button {
+    margin-top: 2vw;
+    padding: 1vw;
+    width: 10vw;
+    border-radius: 2vw;
+    border: none;
+    cursor: pointer;
+}
+
+.red {
+    border: 2px solid red;
+}
+
+.green {
+    border: 2px solid green;
+}
